@@ -3,7 +3,7 @@ import pandas as pd
 import google.generativeai as genai
 import os
 
-genai.configure(api_key=("AIzaSyDqferTB7u2X44NuEPEQKgO2tYIVfmV0fE"))
+genai.configure(api_key=(""))
 
 df = pd.read_excel(r"C:\Users\AL HASSAN\Downloads\kaggle_survey_2020_responses\cleaned_kaggle_dashboard10.xlsx")
 
@@ -63,3 +63,4 @@ if final_question:
         answer = ask_gemini(final_question, df)
     st.write("✅ Answer:")
     st.write(answer)
+
