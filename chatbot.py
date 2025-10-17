@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import google.generativeai as genai
-import os
 
 genai.configure(api_key=(""))
 
@@ -63,4 +62,5 @@ if final_question:
         answer = ask_gemini(final_question, df)
     st.write("✅ Answer:")
     st.write(answer)
+
 
